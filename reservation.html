@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation</title>
+    <link rel="stylesheet" href="css/reservation.css" />
+  </head>
+  <body>
+    <!-- 전체 레이아웃 -->
+    <div class="wrap">
+      <!-- 헤더 -->
+      <header class="header">
+        <!-- 메뉴 -->
+        <nav>
+          <ul class="menu">
+            <!-- 홈 -->
+            <li>
+              <a href="index.html">홈</a>
+            </li>
+            <li>
+              <!-- 이용안내  -->
+              <a href="index.html#intro">이용안내</a>
+            </li>
+            <!-- 객실 소개 -->
+            <li>
+              <a href="index.html#room">객실 소개</a>
+            </li>
+            <!-- 예약방법 및 요금 -->
+            <li>
+              <a href="index.html#how">예약방법 및 요금</a>
+            </li>
+            <!-- 예약하기 -->
+            <li>
+              <a href="reservation.html">예약하기</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- 메인 -->
+      <div class="main">
+        <!-- 개인정보 -->
+         <form id="signUp">
+            <fieldset>
+                <legend>개인정보</legend>
+                <ul class="user">
+                    <li>
+                        <label for="name">이름</label>
+                        <input type="text" id="name">
+                    </li>
+                    <li>
+                        <label for="phone">연락처</label>
+                        <input type="tel" id="phone">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>객실 형태</legend>
+                <ul>
+                    <li>
+                        
+                        <input type="radio" name="roomSelect" id="room">
+                        <label for="room">기본형(최대 2인)</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="roomSelect" id="family">
+                        <label for="family">가족형(최대 4인)</label>
+                        
+                    </li>
+                </ul>
+            </fieldset>
+         </form>
+
+      </div>
+    </div>
+  </body>
+</html>
